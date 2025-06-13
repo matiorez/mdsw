@@ -1,0 +1,22 @@
+name: Deploy via FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Upload via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: eu-central-1.sftpcloud.io
+          username: 2207f79158374ea994ff97b6f52bc993
+          password: Xr8ifSC7PmqmHkwywKfEI3XIHqlejHMT
+          local-dir: ./
