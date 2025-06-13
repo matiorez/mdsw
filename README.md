@@ -48,3 +48,10 @@
 - Dodaj sekret w ustawieniach repozytorium
 - Użyj curl z secrets.MY_SECRET
 
+## Ćwiczenie 7: Upload przez ftp
+**Cel:** Utwórz workflow, który wystawia pliki z folderu **.dist/** przez ftp na serwer clienta
+
+**Wskazówki:**
+
+- Dodaj login, link do ftp oraz hasło przez sekret w github
+- użyj 50min ftp do weryfikacji workflow
