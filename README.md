@@ -1,6 +1,6 @@
-#Zadania
+# Zadania
 
-##Ćwiczenie 1: Pierwszy workflow
+## Ćwiczenie 1: Pierwszy workflow
 **Cel:** Utwórz prosty workflow, który uruchamia się przy każdym pushu do repozytorium i wypisuje „Hello, GitHub Actions!” w logach.
 
 **Wskazówki:**
@@ -9,14 +9,14 @@
 - Job powinien działać na ubuntu-latest
 - Użyj kroku run: echo "Hello, GitHub Actions!"
 
-##Ćwiczenie 2: Workflow z warunkiem
+## Ćwiczenie 2: Workflow z warunkiem
 **Cel:** Zmodyfikuj workflow tak, aby uruchamiał się tylko, gdy zmieniany jest plik w katalogu src/.
 
 **Wskazówki:**
 
 - Użyj paths w definicji eventu push
 
-##Ćwiczenie 3: Automatyczne testy
+## Ćwiczenie 3: Automatyczne testy
 **Cel:** Utwórz workflow, który uruchamia testy jednostkowe w Pythonie po każdym pushu.
 
 **Wskazówki:**
@@ -32,7 +32,7 @@
 
 - Użyj strategy.matrix w definicji joba
 
-##Ćwiczenie 5: Automatyczne tworzenie release
+## Ćwiczenie 5: Automatyczne tworzenie release
 **Cel:** Utwórz workflow, który automatycznie tworzy release na GitHubie, gdy dodany zostanie tag v*.
 
 **Wskazówki:**
@@ -40,7 +40,7 @@
 - Event: push z filtrem na tags
 - Użyj actions/create-release
 
-##Ćwiczenie 6: Użycie secrets
+## Ćwiczenie 6: Użycie secrets
 **Cel:** Utwórz workflow, który używa sekretu (np. tokenu API) do wykonania zapytania HTTP.
 
 **Wskazówki:**
