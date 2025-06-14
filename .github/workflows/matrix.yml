@@ -1,0 +1,15 @@
+name: matrix-tests
+run-name: matrix-pytest
+on: [push]
+
+jobs:
+  tests:
+    strategy:
+      matrix:
+        versions: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pytest   
+
