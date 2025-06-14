@@ -1,0 +1,12 @@
+name: zad1
+run-name: run1
+on:
+  push:
+    paths:
+      - src/**
+jobs:
+  zad1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello world
+        run: echo "Hello, GitHub Actions!"    
