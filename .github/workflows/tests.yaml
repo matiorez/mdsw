@@ -1,0 +1,11 @@
+name: tests
+run-name: pytest
+on:
+  push:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python
+    - run: pytest
