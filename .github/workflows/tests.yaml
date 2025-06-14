@@ -1,11 +1,10 @@
 name: tests
 run-name: pytest
-on:
-  push:
+on: [push]
 
 jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-python
-    - run: pytest
+      - run: pytest
