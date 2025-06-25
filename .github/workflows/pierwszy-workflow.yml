@@ -1,0 +1,10 @@
+name: pierwszy-workflow
+
+on: [push]
+
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wypisz komunikat
+        run: echo "Hello, GitHub Actions!"
